@@ -1,15 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App Download</title>
-</head>
-<body>
-  <h1>My App</h1>
-  <p>Download the latest Android app.</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <a href="https://github.com/Sandeep002-wq/App-download-page/releases/download/v1.0.0/base.apk">
-    <button>Download APK</button>
-  </a>
+<title>Play786 App - Download</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #202124;
+}
+
+.header {
+    background: white;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    background: linear-gradient(135deg,#111,#555);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.app-info h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.app-info p {
+    margin: 5px 0 0;
+    color: #00875a;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 25px 18px 50px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px 20px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.stat strong {
+    display: block;
+    font-size: 20px;
+}
+
+.stat span {
+    color: #777;
+    font-size: 13px;
+}
+
+.download {
+    display: block;
+    width: 100%;
+    padding: 17px;
+    background: #087f5b;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.download:hover {
+    background: #066b4d;
+}
+
+.note {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.section {
+    margin-top: 25px;
+}
+
+.section h2 {
+    font-size: 20px;
+}
+
+.feature {
+    background: #f7f7f7;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.footer {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin-top: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo">P</div>
+
+    <div class="app-info">
+        <h1>Play786</h1>
+        <p>Play786 Official App</p>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="stats">
+            <div class="stat">
+                <strong>4.8 ★</strong>
+                <span>Rating</span>
+            </div>
+
+            <div class="stat">
+                <strong>10K+</strong>
+                <span>Downloads</span>
+            </div>
+
+            <div class="stat">
+                <strong>Android</strong>
+                <span>Platform</span>
+            </div>
+        </div>
+
+        <a class="download"
+        href="https://github.com/Sandeep002-wq/App-download-page/releases/download/v1.0.0/base.apk">
+            ⬇ Download APK
+        </a>
+
+        <p class="note">
+            Latest Android version available.<br>
+            Tap the button above to download the APK.
+        </p>
+
+        <div class="section">
+            <h2>📱 About Play786</h2>
+
+            <div class="feature">
+                ✅ Fast & Easy to Use
+            </div>
+
+            <div class="feature">
+                ✅ Latest Android App Version
+            </div>
+
+            <div class="feature">
+                ✅ Secure APK Download
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚠️ Installation</h2>
+
+            <p class="note">
+                APK download hone ke baad file open karein.
+                Agar Android permission maange to
+                "Install unknown apps" permission allow karein.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Play786 · Official Download Page
+    </div>
+
+</div>
+
 </body>
 </html>
