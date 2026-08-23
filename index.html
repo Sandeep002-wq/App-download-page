@@ -7,125 +7,141 @@
 <title>Play786 App - Download</title>
 
 <style>
-* {
-    box-sizing: border-box;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f6f8;
-    color: #202124;
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f6f8;
+    color:#202124;
 }
 
-.header {
-    background: white;
-    padding: 18px 20px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+.header{
+    background:#ffffff;
+    padding:16px 20px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
-.logo {
-    width: 65px;
-    height: 65px;
-    border-radius: 15px;
-    background: linear-gradient(135deg,#111,#555);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
+.logo{
+    width:65px;
+    height:65px;
+    border-radius:15px;
+    object-fit:cover;
+    box-shadow:0 3px 10px rgba(0,0,0,.20);
 }
 
-.app-info h1 {
-    margin: 0;
-    font-size: 25px;
+.header h1{
+    font-size:24px;
+    margin-bottom:5px;
 }
 
-.app-info p {
-    margin: 5px 0 0;
-    color: #00875a;
-    font-size: 16px;
+.header p{
+    color:#777;
+    font-size:14px;
 }
 
-.container {
-    max-width: 600px;
-    margin: auto;
-    padding: 25px 18px 50px;
+.container{
+    max-width:600px;
+    margin:auto;
+    padding:25px 18px 50px;
 }
 
-.card {
-    background: white;
-    border-radius: 18px;
-    padding: 25px 20px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px 20px;
+    box-shadow:0 4px 18px rgba(0,0,0,.10);
+    text-align:center;
 }
 
-.stats {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin: 25px 0;
+.app-logo{
+    width:120px;
+    height:120px;
+    border-radius:25px;
+    object-fit:cover;
+    box-shadow:0 5px 18px rgba(0,0,0,.20);
+    margin-bottom:18px;
 }
 
-.stat strong {
-    display: block;
-    font-size: 20px;
+.app-title{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:8px;
 }
 
-.stat span {
-    color: #777;
-    font-size: 13px;
+.developer{
+    color:#777;
+    margin-bottom:20px;
 }
 
-.download {
-    display: block;
-    width: 100%;
-    padding: 17px;
-    background: #087f5b;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px 0;
+.rating{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:20px 0;
 }
 
-.download:hover {
-    background: #066b4d;
+.rating div{
+    text-align:center;
 }
 
-.note {
-    text-align: center;
-    color: #777;
-    font-size: 14px;
-    line-height: 1.5;
+.rating strong{
+    display:block;
+    font-size:19px;
 }
 
-.section {
-    margin-top: 25px;
+.rating span{
+    color:#777;
+    font-size:13px;
 }
 
-.section h2 {
-    font-size: 20px;
+.info{
+    background:#f7f8fa;
+    border-radius:14px;
+    padding:16px;
+    text-align:left;
+    margin:20px 0;
 }
 
-.feature {
-    background: #f7f7f7;
-    padding: 15px;
-    border-radius: 12px;
-    margin-top: 10px;
+.info p{
+    margin:9px 0;
 }
 
-.footer {
-    text-align: center;
-    color: #777;
-    font-size: 13px;
-    margin-top: 25px;
+.download{
+    display:block;
+    width:100%;
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:17px;
+    border-radius:12px;
+    font-size:19px;
+    font-weight:bold;
+    margin-top:20px;
+    box-shadow:0 5px 15px rgba(230,0,0,.25);
+}
+
+.download:active{
+    transform:scale(.98);
+}
+
+.note{
+    color:#777;
+    font-size:12px;
+    margin-top:14px;
+}
+
+.footer{
+    text-align:center;
+    color:#888;
+    font-size:12px;
+    margin-top:30px;
 }
 </style>
 </head>
@@ -133,76 +149,77 @@ body {
 <body>
 
 <div class="header">
-    <div class="logo">P</div>
 
-    <div class="app-info">
+    <img src="logo.png" class="logo" alt="Play786 Logo">
+
+    <div>
         <h1>Play786</h1>
-        <p>Play786 Official App</p>
+        <p>Official App Download</p>
     </div>
+
 </div>
 
 <div class="container">
 
-    <div class="card">
+<div class="card">
 
-        <div class="stats">
-            <div class="stat">
-                <strong>4.8 ★</strong>
-                <span>Rating</span>
-            </div>
+    <img src="logo.png" class="app-logo" alt="Play786 App">
 
-            <div class="stat">
-                <strong>10K+</strong>
-                <span>Downloads</span>
-            </div>
+    <div class="app-title">
+        Play786 App
+    </div>
 
-            <div class="stat">
-                <strong>Android</strong>
-                <span>Platform</span>
-            </div>
+    <div class="developer">
+        Latest Android Application
+    </div>
+
+    <div class="rating">
+
+        <div>
+            <strong>★★★★★</strong>
+            <span>App Rating</span>
         </div>
 
-        <a class="download"
-        href="https://github.com/Sandeep002-wq/App-download-page/releases/download/v1.0.0/base.apk">
-            ⬇ Download APK
-        </a>
-
-        <p class="note">
-            Latest Android version available.<br>
-            Tap the button above to download the APK.
-        </p>
-
-        <div class="section">
-            <h2>📱 About Play786</h2>
-
-            <div class="feature">
-                ✅ Fast & Easy to Use
-            </div>
-
-            <div class="feature">
-                ✅ Latest Android App Version
-            </div>
-
-            <div class="feature">
-                ✅ Secure APK Download
-            </div>
+        <div>
+            <strong>85.9 MB</strong>
+            <span>App Size</span>
         </div>
 
-        <div class="section">
-            <h2>⚠️ Installation</h2>
-
-            <p class="note">
-                APK download hone ke baad file open karein.
-                Agar Android permission maange to
-                "Install unknown apps" permission allow karein.
-            </p>
+        <div>
+            <strong>Android</strong>
+            <span>Platform</span>
         </div>
 
     </div>
 
-    <div class="footer">
-        © 2026 Play786 · Official Download Page
+    <div class="info">
+
+        <p>📱 <b>App Name:</b> Play786</p>
+
+        <p>📦 <b>Version:</b> 1.0.0</p>
+
+        <p>💾 <b>Size:</b> 85.9 MB</p>
+
+        <p>🤖 <b>Platform:</b> Android</p>
+
     </div>
+
+    <a
+      class="download"
+      href="https://github.com/Sandeep002-wq/App-download-page/releases/download/v1.0.0/base.apk"
+      download>
+      ⬇️ INSTALL / DOWNLOAD APP
+    </a>
+
+    <div class="note">
+        Tap the button above to download the latest Play786 APK.
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 Play786 • Official App Download
+</div>
 
 </div>
 
